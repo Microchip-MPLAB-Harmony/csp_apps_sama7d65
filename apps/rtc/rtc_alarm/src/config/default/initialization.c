@@ -147,9 +147,9 @@ void SYS_Initialize ( void* data )
 
 
 
-	RTC_Initialize();
-
     FLEXCOM6_USART_Initialize();
+
+	RTC_Initialize();
 
 
 
