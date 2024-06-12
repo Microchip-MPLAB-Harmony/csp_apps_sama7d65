@@ -105,12 +105,12 @@ typedef enum IRQn
   RSTC_IRQn                 =  37, /* 37  Reset Controller (RSTC)             */
   RTC_IRQn                  =  38, /* 38  Real-time Clock (RTC)               */
   RTT_IRQn                  =  39, /* 39  Real-time Timer (RTT)               */
-  PMC_IRQn                  =  40, /* 40  Power Management Controller (PMC)   */
-  PIOA_IRQn                 =  41, /* 41  Parallel Input/Output Controller (PIOA) */
-  PIOB_IRQn                 =  42, /* 42  Parallel Input/Output Controller (PIOB) */
-  PIOC_IRQn                 =  43, /* 43  Parallel Input/Output Controller (PIOC) */
-  PIOD_IRQn                 =  44, /* 44  Parallel Input/Output Controller (PIOD) */
-  PIOE_IRQn                 =  45, /* 45  Parallel Input/Output Controller (PIOE) */
+  PMC_IRQn                  =  41, /* 41  Power Management Controller (PMC)   */
+  PIOA_IRQn                 =  42, /* 42  Parallel Input/Output Controller (PIOA) */
+  PIOB_IRQn                 =  43, /* 43  Parallel Input/Output Controller (PIOB) */
+  PIOC_IRQn                 =  44, /* 44  Parallel Input/Output Controller (PIOC) */
+  PIOD_IRQn                 =  45, /* 45  Parallel Input/Output Controller (PIOD) */
+  PIOE_IRQn                 =  46, /* 46  Parallel Input/Output Controller (PIOE) */
   PUF_IRQn                  =  47, /* 47  Physical Unclonable Functions (PUF) */
   SECUMOD_IRQn              =  48, /* 48  Security Module (SECUMOD)           */
   SECURAM_IRQn              =  49, /* 49   (SECURAM)                          */
@@ -570,7 +570,7 @@ typedef enum IRQn
 #define ADC_REGS                         ((adc_registers_t*)0xe1000000)                /* ADC Registers Address        */
 #define AES_REGS                         ((aes_registers_t*)0xe1600000)                /* AES Registers Address        */
 #define ASRC_REGS                        ((asrc_registers_t*)0xe2808000)               /* ASRC Registers Address       */
-#define BSC_REGS                         ((bsc_registers_t*)0xe001d600)                /* BSC Registers Address        */
+#define BSC_REGS                         ((bsc_registers_t*)0xe001d604)                /* BSC Registers Address        */
 #define CHIPID_REGS                      ((chipid_registers_t*)0xe0020000)             /* CHIPID Registers Address     */
 #define CPKCC_REGS                       ((cpkcc_registers_t*)0xe000c000)              /* CPKCC Registers Address      */
 #define DDRPUBL_REGS                     ((ddr3phy_registers_t*)0xe3804000)            /* DDRPUBL Registers Address    */
@@ -668,7 +668,7 @@ typedef enum IRQn
 #define ADC_BASE_ADDRESS                 _UINT32_(0xe1000000)                          /* ADC Base Address */
 #define AES_BASE_ADDRESS                 _UINT32_(0xe1600000)                          /* AES Base Address */
 #define ASRC_BASE_ADDRESS                _UINT32_(0xe2808000)                          /* ASRC Base Address */
-#define BSC_BASE_ADDRESS                 _UINT32_(0xe001d600)                          /* BSC Base Address */
+#define BSC_BASE_ADDRESS                 _UINT32_(0xe001d604)                          /* BSC Base Address */
 #define CHIPID_BASE_ADDRESS              _UINT32_(0xe0020000)                          /* CHIPID Base Address */
 #define CPKCC_BASE_ADDRESS               _UINT32_(0xe000c000)                          /* CPKCC Base Address */
 #define DDRPUBL_BASE_ADDRESS             _UINT32_(0xe3804000)                          /* DDRPUBL Base Address */
