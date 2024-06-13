@@ -5,9 +5,8 @@ package:
   type: "application"
   status: "production"
   required: false
-  version: "1.0.0"
 
   dependencies:
     - name: "csp"
       type: "package"
-      version: "3.19.0"
+      version: "v3.19.0"
