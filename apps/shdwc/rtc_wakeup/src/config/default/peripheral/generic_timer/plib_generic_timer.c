@@ -54,13 +54,15 @@
 
 volatile static uint64_t compareDelta = 12000000UL;
 
+
+#define GENERIC_TIMER_INTERRUPT_PERIOD_IN_US  (500000U)
+
 volatile static struct callbackObject
 {
-    GENERIC_TIMER_CALLBACK pCallback;
-    uintptr_t context;
-}genericTimerCallbackObj;
-
-
+    GENERIC_TIMER_CALLBACK  pCallback;
+    uintptr_t               context;
+    volatile uint32_t       tickCounter;
+}genericTimerObj;
 
 
 void GENERIC_TIMER_Initialize(void)
@@ -68,18 +70,15 @@ void GENERIC_TIMER_Initialize(void)
     PL1_SetCounterFrequency(GENERIC_TIMER_FREQUENCY);
 }
 
-
 uint64_t GENERIC_TIMER_CounterValueGet(void)
 {
     return PL1_GetCurrentPhysicalValue();
 }
 
-
 uint32_t GENERIC_TIMER_CounterFrequencyGet(void)
 {
     return GENERIC_TIMER_FREQUENCY;
 }
-
 
 void GENERIC_TIMER_DelayUs(uint32_t delay_us)
 {
@@ -91,7 +90,6 @@ void GENERIC_TIMER_DelayUs(uint32_t delay_us)
 
     }
 }
-
 
 void GENERIC_TIMER_DelayMs(uint32_t delay_ms)
 {
@@ -111,7 +109,6 @@ void GENERIC_TIMER_Start(void)
     PL1_SetControl(1U);
 }
 
-
 void GENERIC_TIMER_PeriodSet(uint64_t period)
 {
     uint32_t control = PL1_GetControl();
@@ -121,12 +118,10 @@ void GENERIC_TIMER_PeriodSet(uint64_t period)
     PL1_SetControl(control);
 }
 
-
 uint64_t GENERIC_TIMER_PeriodGet(void)
 {
     return compareDelta;
 }
-
 
 void GENERIC_TIMER_Stop(void)
 {
@@ -134,10 +129,37 @@ void GENERIC_TIMER_Stop(void)
 }
 
 
+uint32_t GENERIC_TIMER_GetTickCounter(void)
+{
+    return genericTimerObj.tickCounter;
+}
+
+void GENERIC_TIMER_StartTimeOut (GENERIC_TIMER_TIMEOUT* timeout, uint32_t delay_ms)
+{
+    timeout->start = GENERIC_TIMER_GetTickCounter();
+    timeout->count = (delay_ms*1000U)/GENERIC_TIMER_INTERRUPT_PERIOD_IN_US;
+}
+
+void GENERIC_TIMER_ResetTimeOut (GENERIC_TIMER_TIMEOUT* timeout)
+{
+    timeout->start = GENERIC_TIMER_GetTickCounter();
+}
+
+bool GENERIC_TIMER_IsTimeoutReached (GENERIC_TIMER_TIMEOUT* timeout)
+{
+    bool valTimeout  = true;
+    if ((GENERIC_TIMER_GetTickCounter() - timeout->start) < timeout->count)
+    {
+        valTimeout = false;
+    }
+
+    return valTimeout;
+}
+
 void GENERIC_TIMER_CallbackRegister(GENERIC_TIMER_CALLBACK pCallback, uintptr_t context)
 {
-    genericTimerCallbackObj.pCallback = pCallback;
-    genericTimerCallbackObj.context = context;
+    genericTimerObj.pCallback = pCallback;
+    genericTimerObj.context = context;
 }
 
 
@@ -145,10 +167,11 @@ void __attribute__((used)) GENERIC_TIMER_InterruptHandler (void)
 {
     uint64_t currentCompVal = PL1_GetPhysicalCompareValue();
     /* Additional temporary variable used to prevent MISRA violations (Rule 13.x) */
-    uintptr_t context = genericTimerCallbackObj.context;
+    uintptr_t context = genericTimerObj.context;
     PL1_SetPhysicalCompareValue(currentCompVal + compareDelta);
-    if(genericTimerCallbackObj.pCallback != NULL)
+    genericTimerObj.tickCounter++;
+    if(genericTimerObj.pCallback != NULL)
     {
-        genericTimerCallbackObj.pCallback(context);
+        genericTimerObj.pCallback(context);
     }
 }
