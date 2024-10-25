@@ -54,8 +54,8 @@
 #include "peripheral/gic/plib_gic.h"
 #include "peripheral/mmu/plib_mmu.h"
 #include "peripheral/pio/plib_pio.h"
-#include "peripheral/flexcom/usart/plib_flexcom6_usart.h"
 #include "peripheral/rtc/plib_rtc.h"
+#include "peripheral/flexcom/usart/plib_flexcom6_usart.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -66,13 +66,13 @@ extern "C" {
 // DOM-IGNORE-END
 
 /* Device Information */
-#define DEVICE_NAME			 "SAMA7D65"
-#define DEVICE_ARCH			 "CORTEX-A7"
-#define DEVICE_FAMILY		 "SAMA7"
-#define DEVICE_SERIES		 "SAMA7D6"
+#define DEVICE_NAME          "SAMA7D65"
+#define DEVICE_ARCH          "CORTEX-A7"
+#define DEVICE_FAMILY        "SAMA7"
+#define DEVICE_SERIES        "SAMA7D6"
 
 /* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 800000000
+#define CPU_CLOCK_FREQUENCY 800000000U
 
 // *****************************************************************************
 // *****************************************************************************
