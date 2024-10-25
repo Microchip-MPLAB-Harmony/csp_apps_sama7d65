@@ -58,18 +58,15 @@ void GENERIC_TIMER_Initialize(void)
     PL1_SetCounterFrequency(GENERIC_TIMER_FREQUENCY);
 }
 
-
 uint64_t GENERIC_TIMER_CounterValueGet(void)
 {
     return PL1_GetCurrentPhysicalValue();
 }
 
-
 uint32_t GENERIC_TIMER_CounterFrequencyGet(void)
 {
     return GENERIC_TIMER_FREQUENCY;
 }
-
 
 void GENERIC_TIMER_DelayUs(uint32_t delay_us)
 {
@@ -82,7 +79,6 @@ void GENERIC_TIMER_DelayUs(uint32_t delay_us)
     }
 }
 
-
 void GENERIC_TIMER_DelayMs(uint32_t delay_ms)
 {
     /* System counter is not expected to roll-over between two resets */
@@ -93,3 +89,4 @@ void GENERIC_TIMER_DelayMs(uint32_t delay_ms)
 
     }
 }
+

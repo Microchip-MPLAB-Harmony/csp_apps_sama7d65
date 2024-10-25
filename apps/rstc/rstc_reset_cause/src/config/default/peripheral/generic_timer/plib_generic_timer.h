@@ -48,6 +48,8 @@
 #ifndef PLIB_GENERIC_TIMER_H
 #define PLIB_GENERIC_TIMER_H
 
+#include <stdbool.h>
+
 #ifdef __cplusplus  // Provide C++ Compatibility
 extern "C" {
 #endif //__cplusplus
