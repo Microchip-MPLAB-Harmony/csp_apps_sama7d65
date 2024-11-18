@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>sam_a7d65_curiosity</name>
+            <name>trng_random_number_sam_a7d65_curiosity</name>
             <creation-uuid>102db2ee-fe98-408e-8b8b-196b257842f5</creation-uuid>
             <make-project-type>0</make-project-type>
             <sourceEncoding>ISO-8859-1</sourceEncoding>

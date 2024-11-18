@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>sam_a7d65_curiosity</name>
+            <name>acc_interrupt_sam_a7d65_curiosity</name>
             <creation-uuid>0488c0e1-3a53-4ad0-a186-7dfb50bb28ba</creation-uuid>
             <make-project-type>0</make-project-type>
             <sourceEncoding>ISO-8859-1</sourceEncoding>

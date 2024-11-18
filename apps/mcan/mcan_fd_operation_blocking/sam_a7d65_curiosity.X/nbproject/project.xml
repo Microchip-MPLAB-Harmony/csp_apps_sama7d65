@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>sam_a7d65_curiosity</name>
+            <name>mcan_fd_blocking_sam_a7d65_curiosity</name>
             <creation-uuid>eb204c5b-3e88-45fa-99f1-12d6ba233985</creation-uuid>
             <make-project-type>0</make-project-type>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
