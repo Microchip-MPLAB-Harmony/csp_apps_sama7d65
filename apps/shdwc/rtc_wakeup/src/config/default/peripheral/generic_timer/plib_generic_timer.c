@@ -52,12 +52,12 @@
 
 #define GENERIC_TIMER_FREQUENCY 24000000U
 
-volatile static uint64_t compareDelta = 12000000UL;
+static volatile uint64_t compareDelta = 12000000UL;
 
 
 #define GENERIC_TIMER_INTERRUPT_PERIOD_IN_US  (500000U)
 
-volatile static struct callbackObject
+static volatile struct callbackObject
 {
     GENERIC_TIMER_CALLBACK  pCallback;
     uintptr_t               context;
