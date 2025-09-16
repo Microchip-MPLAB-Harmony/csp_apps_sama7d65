@@ -82,7 +82,6 @@
             <itemPath>../src/packs/SAMA7D65_DFP/component/adc.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/component/pwm.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/component/sha.h</itemPath>
-            <itemPath>../src/packs/SAMA7D65_DFP/component/pmonc.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/component/sdmmc.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/component/dwdt.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/component/shdwc.h</itemPath>
@@ -152,7 +151,6 @@
             <itemPath>../src/packs/SAMA7D65_DFP/instance/gpu2dc.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/lvdsc.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/qspi1.h</itemPath>
-            <itemPath>../src/packs/SAMA7D65_DFP/instance/pmonc.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/flexcom9.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/gmac1.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/aes.h</itemPath>
@@ -182,7 +180,6 @@
             <itemPath>../src/packs/SAMA7D65_DFP/instance/pio.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/spdiftx.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/pit64b3.h</itemPath>
-            <itemPath>../src/packs/SAMA7D65_DFP/instance/uhphs_ehci.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/pdmc0.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/nicgpv0.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/pwm.h</itemPath>
@@ -197,16 +194,14 @@
             <itemPath>../src/packs/SAMA7D65_DFP/instance/sdmmc1.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/pit64b0.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/flexcom7.h</itemPath>
-            <itemPath>../src/packs/SAMA7D65_DFP/instance/tzaesbns.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/pit64b4.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/cpkcc.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/sckc.h</itemPath>
-            <itemPath>../src/packs/SAMA7D65_DFP/instance/tzaesbs.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/adc.h</itemPath>
-            <itemPath>../src/packs/SAMA7D65_DFP/instance/uhphs_ohci.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/rstc.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/i2smcc1.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/puf.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/uhpfs.h</itemPath>
           </logicalFolder>
           <logicalFolder name="pio" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/SAMA7D65_DFP/pio/sama7d65.h</itemPath>
@@ -216,8 +211,16 @@
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
+      <logicalFolder name="sam_a7d65_curiosity" displayName="sam_a7d65_curiosity" projectFiles="true">
+        <itemPath>sam_a7d65_curiosity/mcc-config.mc4</itemPath>
+        <logicalFolder name="components" displayName="components" projectFiles="true">
+          <itemPath>sam_a7d65_curiosity/components/cmsis.yml</itemPath>
+          <itemPath>sam_a7d65_curiosity/components/core.yml</itemPath>
+          <itemPath>sam_a7d65_curiosity/components/dfp.yml</itemPath>
+          <itemPath>sam_a7d65_curiosity/components/flexcom4.yml</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>sam_a7d65_curiosity.mc3</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
@@ -276,11 +279,11 @@
         <targetPluginBoard/>
         <platformTool>ICD4Tool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.45</languageToolchainVersion>
+        <languageToolchainVersion>4.60</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAMA7D65_DFP" vendor="Microchip" version="1.2.47"/>
+        <pack name="SAMA7D65_DFP" vendor="Microchip" version="1.8.85"/>
       </packs>
       <ScriptingSettings>
         <ScriptingSetting key="boot.load_adr" value=""/>
