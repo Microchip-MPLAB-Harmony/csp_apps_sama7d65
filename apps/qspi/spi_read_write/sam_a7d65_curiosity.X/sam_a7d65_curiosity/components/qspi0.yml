@@ -1,0 +1,115 @@
+configVersion: 1.0.0
+componentName: qspi0
+coreVersion: 5.8.2
+device: SAMA7D65
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: qspi0
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: CMSIS_5
+  type: package
+  version: 5.9.0
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.23.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: qspi0
+          x: '30'
+          y: '60'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    QSPI_CLK_FREQ:
+      attributes:
+        id: QSPI_CLK_FREQ
+      children:
+      - children:
+        - attributes:
+            id: qspi0
+            value: '133333350'
+          type: Dynamic
+        type: Values
+      type: Integer
+    QSPI_CPOL:
+      attributes:
+        id: QSPI_CPOL
+      children:
+      - children:
+        - attributes:
+            id: qspi0
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+    QSPI_DLLCFG_RANGE:
+      attributes:
+        id: QSPI_DLLCFG_RANGE
+      children:
+      - children:
+        - attributes:
+            id: qspi0
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    QSPI_NBBITS:
+      attributes:
+        id: QSPI_NBBITS
+      children:
+      - children:
+        - attributes:
+            id: visible
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      - children:
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: KeyValueSet
+    QSPI_SMM:
+      attributes:
+        id: QSPI_SMM
+      children:
+      - children:
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: KeyValueSet
+    SPI_DUMMY_DATA:
+      attributes:
+        id: SPI_DUMMY_DATA
+      children:
+      - children:
+        - attributes:
+            id: max
+          children:
+          - type: Value
+            value: '255'
+          type: Long
+        type: Attributes
+      - children:
+        - attributes:
+            id: qspi0
+            value: '255'
+          type: Dynamic
+        type: Values
+      type: Hex
+  userData: {}
