@@ -153,12 +153,12 @@ void SYS_Initialize ( void* data )
     TC1_CH0_CaptureInitialize(); 
      
     
-    FLEXCOM6_USART_Initialize();
-
  
     TC0_CH0_TimerInitialize(); 
     TC0_CH1_CompareInitialize(); 
     
+    FLEXCOM6_USART_Initialize();
+
 
 
 

@@ -201,7 +201,15 @@
             <itemPath>../src/packs/SAMA7D65_DFP/instance/pit64b3.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/sdmmc2.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/ddrumctl.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/pioa.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/piob.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/pioc.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/piod.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/pioe.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/securam.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/tzaesb.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/uhpfs.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/uhphs.h</itemPath>
           </logicalFolder>
           <logicalFolder name="pio" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/SAMA7D65_DFP/pio/sama7d65.h</itemPath>
@@ -213,18 +221,19 @@
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="true">
-      <logicalFolder name="sam_a7d65_curiosity"
-                     displayName="sam_a7d65_curiosity"
+      <logicalFolder name="tc_timer_mode_sam_a7d65_curiosity_default"
+                     displayName="tc_timer_mode_sam_a7d65_curiosity_default"
                      projectFiles="true">
         <logicalFolder name="components" displayName="components" projectFiles="true">
-          <itemPath>sam_a7d65_curiosity/components/cmsis.yml</itemPath>
-          <itemPath>sam_a7d65_curiosity/components/core.yml</itemPath>
-          <itemPath>sam_a7d65_curiosity/components/dfp.yml</itemPath>
-          <itemPath>sam_a7d65_curiosity/components/tc0.yml</itemPath>
+          <itemPath>tc_timer_mode_sam_a7d65_curiosity_default/components/cmsis.yml</itemPath>
+          <itemPath>tc_timer_mode_sam_a7d65_curiosity_default/components/core.yml</itemPath>
+          <itemPath>tc_timer_mode_sam_a7d65_curiosity_default/components/dfp.yml</itemPath>
+          <itemPath>tc_timer_mode_sam_a7d65_curiosity_default/components/tc0.yml</itemPath>
         </logicalFolder>
-        <itemPath>sam_a7d65_curiosity/mcc-config.mc4</itemPath>
+        <itemPath>tc_timer_mode_sam_a7d65_curiosity_default/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
+      <itemPath>../src/config/default/pin_configurations.csv</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -269,7 +278,6 @@
           <itemPath>../src/config/default/fault_handlers.c</itemPath>
         </logicalFolder>
       </logicalFolder>
-      <itemPath>../src/config/default/pin_configurations.csv</itemPath>
       <itemPath>../src/main.c</itemPath>
     </logicalFolder>
   </logicalFolder>

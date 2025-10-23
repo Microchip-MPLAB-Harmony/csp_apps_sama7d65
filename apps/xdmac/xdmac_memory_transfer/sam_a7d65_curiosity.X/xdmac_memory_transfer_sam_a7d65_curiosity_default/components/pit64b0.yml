@@ -81,7 +81,7 @@ data:
       - children:
         - attributes:
             id: pit64b0
-            value: 2.14748368E8
+            value: '2.14748368E8'
           type: Dynamic
         type: Values
       type: Float

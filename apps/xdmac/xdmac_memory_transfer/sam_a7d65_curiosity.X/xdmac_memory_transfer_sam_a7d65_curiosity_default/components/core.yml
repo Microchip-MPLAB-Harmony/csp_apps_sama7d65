@@ -32,45 +32,17 @@ data:
       type: ElementPositions
     type: ComponentGraph
   symbols:
-    DWDT_PS_ENABLE:
+    DMA_ENABLE:
       attributes:
-        id: DWDT_PS_ENABLE
-      children:
-      - children:
-        - attributes:
-            value: 'true'
-          type: User
-        type: Values
-      type: Boolean
-    DWDT_PS_PERIOD:
-      attributes:
-        id: DWDT_PS_PERIOD
-      children:
-      - children:
-        - attributes:
-            id: readOnly
-          children:
-          - type: Value
-            value: 'false'
-          type: Boolean
-        type: Attributes
-      - children:
-        - attributes:
-            value: '1000'
-          type: User
-        type: Values
-      type: Integer
-    DWDT_PS_PERIOD_MS:
-      attributes:
-        id: DWDT_PS_PERIOD_MS
+        id: DMA_ENABLE
       children:
       - children:
         - attributes:
             id: core
-            value: '4000'
+            value: 'true'
           type: Dynamic
         type: Values
-      type: Integer
+      type: Boolean
     FLEXCOM6_CLOCK_ENABLE:
       attributes:
         id: FLEXCOM6_CLOCK_ENABLE
@@ -115,110 +87,43 @@ data:
           type: Dynamic
         type: Values
       type: String
-    GENERIC_TIMER_COMPARE_DELTA:
+    PIN_116_FUNCTION_TYPE:
       attributes:
-        id: GENERIC_TIMER_COMPARE_DELTA
+        id: PIN_116_FUNCTION_TYPE
       children:
       - children:
         - attributes:
-            id: core
-            value: '12000000'
-          type: Dynamic
-        type: Values
-      type: Integer
-    GENERIC_TIMER_ENABLE:
-      attributes:
-        id: GENERIC_TIMER_ENABLE
-      children:
-      - children:
-        - attributes:
-            value: 'true'
-          type: User
-        type: Values
-      type: Boolean
-    GENERIC_TIMER_INTERRUPT:
-      attributes:
-        id: GENERIC_TIMER_INTERRUPT
-      children:
-      - children:
-        - attributes:
-            id: readOnly
-          children:
-          - type: Value
-            value: 'false'
-          type: Boolean
-        type: Attributes
-      - children:
-        - attributes:
-            value: 'true'
-          type: User
-        type: Values
-      type: Boolean
-    GENERIC_TIMER_PERIOD:
-      attributes:
-        id: GENERIC_TIMER_PERIOD
-      children:
-      - children:
-        - attributes:
-            id: readOnly
-          children:
-          - type: Value
-            value: 'false'
-          type: Boolean
-        type: Attributes
-      - children:
-        - attributes:
-            value: '500'
-          type: User
-        type: Values
-      type: Integer
-    PIN_146_FUNCTION_NAME:
-      attributes:
-        id: PIN_146_FUNCTION_NAME
-      children:
-      - children:
-        - attributes:
-            value: USER_BUTTON
+            value: FLEXCOM6_IO1
           type: User
         type: Values
       type: String
-    PIN_146_FUNCTION_TYPE:
+    PIN_116_PERIPHERAL_FUNCTION:
       attributes:
-        id: PIN_146_FUNCTION_TYPE
+        id: PIN_116_PERIPHERAL_FUNCTION
       children:
       - children:
         - attributes:
-            value: GPIO
+            value: B
           type: User
         type: Values
       type: String
-    PIN_146_PERIPHERAL_FUNCTION:
+    PIN_155_FUNCTION_TYPE:
       attributes:
-        id: PIN_146_PERIPHERAL_FUNCTION
+        id: PIN_155_FUNCTION_TYPE
       children:
       - children:
         - attributes:
-            value: GPIO
+            value: FLEXCOM6_IO0
           type: User
         type: Values
       type: String
-    PIN_146_PIO_INTERRUPT:
+    PIN_155_PERIPHERAL_FUNCTION:
       attributes:
-        id: PIN_146_PIO_INTERRUPT
+        id: PIN_155_PERIPHERAL_FUNCTION
       children:
       - children:
         - attributes:
-            value: Falling Edge
-          type: User
-        type: Values
-      type: String
-    PIN_146_PU:
-      attributes:
-        id: PIN_146_PU
-      children:
-      - children:
-        - attributes:
-            value: 'True'
+            value: B
           type: User
         type: Values
       type: String
@@ -342,28 +247,28 @@ data:
           type: User
         type: Values
       type: String
-    PIOC_INTERRUPT_ENABLE:
+    PIT64B0_CLOCK_ENABLE:
       attributes:
-        id: PIOC_INTERRUPT_ENABLE
+        id: PIT64B0_CLOCK_ENABLE
       children:
       - children:
         - attributes:
-            id: core
+            id: pit64b0
             value: 'true'
           type: Dynamic
         type: Values
       type: Boolean
-    PIOC_INTERRUPT_HANDLER:
+    PIT64B0_CLOCK_FREQUENCY:
       attributes:
-        id: PIOC_INTERRUPT_HANDLER
+        id: PIT64B0_CLOCK_FREQUENCY
       children:
       - children:
         - attributes:
             id: core
-            value: PIOC_InterruptHandler
+            value: '100000000'
           type: Dynamic
         type: Values
-      type: String
+      type: Integer
     PORT_A_CFGR_Value21:
       attributes:
         id: PORT_A_CFGR_Value21
@@ -573,20 +478,97 @@ data:
           type: Dynamic
         type: Values
       type: String
-    PORT_C_CFGR_Value10:
+    PORT_D_MSKR_ValueA:
       attributes:
-        id: PORT_C_CFGR_Value10
+        id: PORT_D_MSKR_ValueA
       children:
       - children:
         - attributes:
             id: core
-            value: '0x200'
+            value: '0x0'
           type: Dynamic
         type: Values
       type: String
-    PORT_C_INTERRUPT_USED:
+    PORT_D_MSKR_ValueB:
       attributes:
-        id: PORT_C_INTERRUPT_USED
+        id: PORT_D_MSKR_ValueB
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0xc0000'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_D_MSKR_ValueC:
+      attributes:
+        id: PORT_D_MSKR_ValueC
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_D_MSKR_ValueD:
+      attributes:
+        id: PORT_D_MSKR_ValueD
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_D_MSKR_ValueE:
+      attributes:
+        id: PORT_D_MSKR_ValueE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_D_MSKR_ValueF:
+      attributes:
+        id: PORT_D_MSKR_ValueF
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_D_MSKR_ValueG:
+      attributes:
+        id: PORT_D_MSKR_ValueG
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_D_MSKR_ValueGPIO:
+      attributes:
+        id: PORT_D_MSKR_ValueGPIO
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    XDMAC0_CLOCK_ENABLE:
+      attributes:
+        id: XDMAC0_CLOCK_ENABLE
       children:
       - children:
         - attributes:
@@ -595,106 +577,10 @@ data:
           type: Dynamic
         type: Values
       type: Boolean
-    PORT_C_MSKR_ValueA:
+    XDMAC0_INTERRUPT_ENABLE:
       attributes:
-        id: PORT_C_MSKR_ValueA
+        id: XDMAC0_INTERRUPT_ENABLE
       children:
-      - children:
-        - attributes:
-            id: core
-            value: '0x0'
-          type: Dynamic
-        type: Values
-      type: String
-    PORT_C_MSKR_ValueB:
-      attributes:
-        id: PORT_C_MSKR_ValueB
-      children:
-      - children:
-        - attributes:
-            id: core
-            value: '0x0'
-          type: Dynamic
-        type: Values
-      type: String
-    PORT_C_MSKR_ValueC:
-      attributes:
-        id: PORT_C_MSKR_ValueC
-      children:
-      - children:
-        - attributes:
-            id: core
-            value: '0x0'
-          type: Dynamic
-        type: Values
-      type: String
-    PORT_C_MSKR_ValueD:
-      attributes:
-        id: PORT_C_MSKR_ValueD
-      children:
-      - children:
-        - attributes:
-            id: core
-            value: '0x0'
-          type: Dynamic
-        type: Values
-      type: String
-    PORT_C_MSKR_ValueE:
-      attributes:
-        id: PORT_C_MSKR_ValueE
-      children:
-      - children:
-        - attributes:
-            id: core
-            value: '0x0'
-          type: Dynamic
-        type: Values
-      type: String
-    PORT_C_MSKR_ValueF:
-      attributes:
-        id: PORT_C_MSKR_ValueF
-      children:
-      - children:
-        - attributes:
-            id: core
-            value: '0x0'
-          type: Dynamic
-        type: Values
-      type: String
-    PORT_C_MSKR_ValueG:
-      attributes:
-        id: PORT_C_MSKR_ValueG
-      children:
-      - children:
-        - attributes:
-            id: core
-            value: '0x0'
-          type: Dynamic
-        type: Values
-      type: String
-    PORT_C_MSKR_ValueGPIO:
-      attributes:
-        id: PORT_C_MSKR_ValueGPIO
-      children:
-      - children:
-        - attributes:
-            id: core
-            value: '0x400'
-          type: Dynamic
-        type: Values
-      type: String
-    SYSTEM_COUNTER_ENABLE:
-      attributes:
-        id: SYSTEM_COUNTER_ENABLE
-      children:
-      - children:
-        - attributes:
-            id: readOnly
-          children:
-          - type: Value
-            value: 'true'
-          type: Boolean
-        type: Attributes
       - children:
         - attributes:
             id: core
@@ -702,44 +588,53 @@ data:
           type: Dynamic
         type: Values
       type: Boolean
-    SYSTEM_COUNTER_FREQUENCY:
+    XDMAC0_INTERRUPT_HANDLER:
       attributes:
-        id: SYSTEM_COUNTER_FREQUENCY
+        id: XDMAC0_INTERRUPT_HANDLER
       children:
       - children:
         - attributes:
             id: core
-            value: '24000000'
+            value: XDMAC0_InterruptHandler
+          type: Dynamic
+        type: Values
+      type: String
+    XDMAC_CC0_PROT:
+      attributes:
+        id: XDMAC_CC0_PROT
+      children:
+      - children:
+        - attributes:
+            value: '1'
+          type: User
+        type: Values
+      type: KeyValueSet
+    XDMAC_CH0_ENABLE:
+      attributes:
+        id: XDMAC_CH0_ENABLE
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    XDMAC_HIGHEST_CHANNEL:
+      attributes:
+        id: XDMAC_HIGHEST_CHANNEL
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '1'
           type: Dynamic
         type: Values
       type: Integer
-    SecPhysTimer_INTERRUPT_ENABLE:
-      attributes:
-        id: SecPhysTimer_INTERRUPT_ENABLE
-      children:
-      - children:
-        - attributes:
-            id: core
-            value: 'true'
-          type: Dynamic
-        type: Values
-      type: Boolean
-    SecPhysTimer_INTERRUPT_HANDLER:
-      attributes:
-        id: SecPhysTimer_INTERRUPT_HANDLER
-      children:
-      - children:
-        - attributes:
-            id: core
-            value: GENERIC_TIMER_InterruptHandler
-          type: Dynamic
-        type: Values
-      type: String
   userData:
     children:
     - attributes:
-        canvasHeight: '90'
-        canvasWidth: '722'
+        canvasHeight: '148'
+        canvasWidth: '453'
       type: GraphSettings
     - children:
       - attributes:

@@ -54,8 +54,8 @@
 #include "peripheral/clk/plib_clk.h"
 #include "peripheral/gic/plib_gic.h"
 #include "peripheral/pio/plib_pio.h"
-#include "peripheral/rtc/plib_rtc.h"
 #include "peripheral/flexcom/usart/plib_flexcom6_usart.h"
+#include "peripheral/rtc/plib_rtc.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
