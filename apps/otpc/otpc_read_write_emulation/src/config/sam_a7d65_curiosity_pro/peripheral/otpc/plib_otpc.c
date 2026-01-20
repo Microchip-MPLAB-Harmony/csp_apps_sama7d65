@@ -429,7 +429,7 @@ otpc_error_code_t OTPC_ReadPacket(  uint16_t headerAddress,
 
     while (payload_size != 0U) {
         /* Start reading the payload (one word at a time) */
-        /* otpc_struct->OTPC_DR will be incremented automatically (sam_a7d65_curiosity_pro value) */
+        /* otpc_struct->OTPC_DR will be incremented automatically (default value) */
         *readBuffer =  OTPC_REGS->OTPC_DR;
          readBuffer++;
 

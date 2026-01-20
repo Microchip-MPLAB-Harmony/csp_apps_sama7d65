@@ -209,6 +209,14 @@
             <itemPath>../src/packs/SAMA7D65_DFP/instance/tzpm.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/mcan2.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/uhpfs.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/pioa.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/piob.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/pioc.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/piod.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/pioe.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/securam.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/tzaesb.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/uhphs.h</itemPath>
           </logicalFolder>
           <logicalFolder name="pio" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/SAMA7D65_DFP/pio/sama7d65.h</itemPath>
@@ -220,18 +228,22 @@
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="true">
-      <logicalFolder name="sam_a7d65_curiosity_pro"
-                     displayName="sam_a7d65_curiosity_pro"
+      <logicalFolder name="generic_timer_periodic_interrupt_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro"
+                     displayName="generic_timer_periodic_interrupt_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro"
                      projectFiles="true">
         <logicalFolder name="components" displayName="components" projectFiles="true">
-          <itemPath>sam_a7d65_curiosity_pro/components/cmsis.yml</itemPath>
-          <itemPath>sam_a7d65_curiosity_pro/components/core.yml</itemPath>
-          <itemPath>sam_a7d65_curiosity_pro/components/dfp.yml</itemPath>
-          <itemPath>sam_a7d65_curiosity_pro/components/rstc.yml</itemPath>
+          <itemPath>generic_timer_periodic_interrupt_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/core.yml</itemPath>
+          <itemPath>generic_timer_periodic_interrupt_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/rstc.yml</itemPath>
+          <itemPath>generic_timer_periodic_interrupt_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/dfp.yml</itemPath>
+          <itemPath>generic_timer_periodic_interrupt_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/cmsis.yml</itemPath>
         </logicalFolder>
-        <itemPath>sam_a7d65_curiosity_pro/mcc-config.mc4</itemPath>
+        <itemPath>generic_timer_periodic_interrupt_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LibraryFiles"
+                   displayName="LibraryFiles"
+                   projectFiles="true">
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -516,6 +528,8 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="51000-e9000fff"/>
         <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmerToGoFilePath"
+                  value="C:/Users/I76597/h3/csp_apps/csp_apps_sama7d65/apps/generic_timer/start_stop_period_change/sam_a7d65_curiosity_pro.X/debug/sam_a7d65_curiosity_pro/sam_a7d65_curiosity_pro_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.ledbrightness" value="5"/>

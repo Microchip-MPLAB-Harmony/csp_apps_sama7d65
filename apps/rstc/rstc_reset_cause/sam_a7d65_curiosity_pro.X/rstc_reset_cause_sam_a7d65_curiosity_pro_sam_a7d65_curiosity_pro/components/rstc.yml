@@ -1,0 +1,42 @@
+configVersion: 1.0.0
+componentName: rstc
+coreVersion: 5.8.3
+device: SAMA7D65
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: rstc
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.23.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: rstc
+          x: '480'
+          y: '20'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    RSTC_MR_EXTERNAL_RESET_ACTION:
+      attributes:
+        id: RSTC_MR_EXTERNAL_RESET_ACTION
+      children:
+      - children:
+        - attributes:
+            id: rstc
+            value: '0'
+          type: Dynamic
+        type: Values
+      type: KeyValueSet
+  userData: {}

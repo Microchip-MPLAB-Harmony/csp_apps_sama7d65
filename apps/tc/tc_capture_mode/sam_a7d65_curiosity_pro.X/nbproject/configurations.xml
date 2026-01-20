@@ -222,21 +222,21 @@
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="true">
-      <logicalFolder name="sam_a7d65_curiosity_pro"
-                     displayName="sam_a7d65_curiosity_pro"
+      <logicalFolder name="tc_capture_mode_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro"
+                     displayName="tc_capture_mode_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro"
                      projectFiles="true">
         <logicalFolder name="components" displayName="components" projectFiles="true">
-          <itemPath>sam_a7d65_curiosity_pro/components/cmsis.yml</itemPath>
-          <itemPath>sam_a7d65_curiosity_pro/components/core.yml</itemPath>
-          <itemPath>sam_a7d65_curiosity_pro/components/dfp.yml</itemPath>
-          <itemPath>sam_a7d65_curiosity_pro/components/flexcom6.yml</itemPath>
-          <itemPath>sam_a7d65_curiosity_pro/components/stdio.yml</itemPath>
-          <itemPath>sam_a7d65_curiosity_pro/components/tc0.yml</itemPath>
-          <itemPath>sam_a7d65_curiosity_pro/components/tc1.yml</itemPath>
+          <itemPath>tc_capture_mode_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/cmsis.yml</itemPath>
+          <itemPath>tc_capture_mode_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/core.yml</itemPath>
+          <itemPath>tc_capture_mode_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/dfp.yml</itemPath>
         </logicalFolder>
-        <itemPath>sam_a7d65_curiosity_pro/mcc-config.mc4</itemPath>
+        <itemPath>tc_capture_mode_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LibraryFiles"
+                   displayName="LibraryFiles"
+                   projectFiles="true">
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -422,7 +422,7 @@
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-cross-reference-file" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
-        <property key="heap-size" value="512"/>
+        <property key="heap-size" value="0"/>
         <property key="input-libraries" value=""/>
         <property key="kseg-length" value=""/>
         <property key="kseg-origin" value=""/>

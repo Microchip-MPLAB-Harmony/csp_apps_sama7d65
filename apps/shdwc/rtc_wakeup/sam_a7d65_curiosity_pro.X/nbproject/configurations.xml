@@ -212,6 +212,14 @@
             <itemPath>../src/packs/SAMA7D65_DFP/instance/tzpm.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/udphsb.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/uhpfs.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/pioa.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/piob.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/pioc.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/piod.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/pioe.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/securam.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/tzaesb.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/uhphs.h</itemPath>
           </logicalFolder>
           <logicalFolder name="pio" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/SAMA7D65_DFP/pio/sama7d65.h</itemPath>
@@ -223,19 +231,23 @@
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="true">
-      <logicalFolder name="sam_a7d65_curiosity_pro"
-                     displayName="sam_a7d65_curiosity_pro"
+      <logicalFolder name="shdwc_wakeup_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro"
+                     displayName="shdwc_wakeup_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro"
                      projectFiles="true">
         <logicalFolder name="components" displayName="components" projectFiles="true">
-          <itemPath>sam_a7d65_curiosity_pro/components/cmsis.yml</itemPath>
-          <itemPath>sam_a7d65_curiosity_pro/components/core.yml</itemPath>
-          <itemPath>sam_a7d65_curiosity_pro/components/dfp.yml</itemPath>
-          <itemPath>sam_a7d65_curiosity_pro/components/rtc.yml</itemPath>
-          <itemPath>sam_a7d65_curiosity_pro/components/shdwc.yml</itemPath>
+          <itemPath>shdwc_wakeup_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/core.yml</itemPath>
+          <itemPath>shdwc_wakeup_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/shdwc.yml</itemPath>
+          <itemPath>shdwc_wakeup_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/cmsis.yml</itemPath>
+          <itemPath>shdwc_wakeup_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/rtc.yml</itemPath>
+          <itemPath>shdwc_wakeup_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/dfp.yml</itemPath>
         </logicalFolder>
-        <itemPath>sam_a7d65_curiosity_pro/mcc-config.mc4</itemPath>
+        <itemPath>shdwc_wakeup_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LibraryFiles"
+                   displayName="LibraryFiles"
+                   projectFiles="true">
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"

@@ -1,0 +1,73 @@
+configVersion: 1.0.0
+componentName: tc0
+coreVersion: 5.8.3
+device: SAMA7D65
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: tc0
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.23.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: tc0
+          x: '212'
+          y: '60'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
+  symbols:
+    TC0_CLOCK_FREQ:
+      attributes:
+        id: TC0_CLOCK_FREQ
+      children:
+      - children:
+        - attributes:
+            id: tc0
+            value: '100000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    TC0_ENABLE:
+      attributes:
+        id: TC0_ENABLE
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    TC0_TIMER_PERIOD_COUNT:
+      attributes:
+        id: TC0_TIMER_PERIOD_COUNT
+      children:
+      - children:
+        - attributes:
+            id: tc0
+            value: '50000000'
+          type: Dynamic
+        type: Values
+      type: Long
+    TC0_TIMER_PERIOD_MS:
+      attributes:
+        id: TC0_TIMER_PERIOD_MS
+      children:
+      - children:
+        - attributes:
+            value: '500.0'
+          type: User
+        type: Values
+      type: Float
+  userData: {}

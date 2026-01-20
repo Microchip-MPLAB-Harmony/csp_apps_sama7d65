@@ -204,6 +204,14 @@
             <itemPath>../src/packs/SAMA7D65_DFP/instance/pmc.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/qspi0.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/uhpfs.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/pioa.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/piob.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/pioc.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/piod.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/pioe.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/securam.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/tzaesb.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/uhphs.h</itemPath>
           </logicalFolder>
           <logicalFolder name="pio" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/SAMA7D65_DFP/pio/sama7d65.h</itemPath>
@@ -215,18 +223,22 @@
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="true">
-      <logicalFolder name="sam_a7d65_curiosity_pro"
-                     displayName="sam_a7d65_curiosity_pro"
+      <logicalFolder name="pwm_generation_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro"
+                     displayName="pwm_generation_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro"
                      projectFiles="true">
         <logicalFolder name="components" displayName="components" projectFiles="true">
-          <itemPath>sam_a7d65_curiosity_pro/components/cmsis.yml</itemPath>
-          <itemPath>sam_a7d65_curiosity_pro/components/core.yml</itemPath>
-          <itemPath>sam_a7d65_curiosity_pro/components/dfp.yml</itemPath>
-          <itemPath>sam_a7d65_curiosity_pro/components/pwm.yml</itemPath>
+          <itemPath>pwm_generation_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/dfp.yml</itemPath>
+          <itemPath>pwm_generation_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/core.yml</itemPath>
+          <itemPath>pwm_generation_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/pwm.yml</itemPath>
+          <itemPath>pwm_generation_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/cmsis.yml</itemPath>
         </logicalFolder>
-        <itemPath>sam_a7d65_curiosity_pro/mcc-config.mc4</itemPath>
+        <itemPath>pwm_generation_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LibraryFiles"
+                   displayName="LibraryFiles"
+                   projectFiles="true">
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -331,6 +343,7 @@
       <C32>
         <property key="additional-warnings" value="true"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value="-marm"/>
         <property key="enable-app-io" value="false"/>
         <property key="enable-omit-frame-pointer" value="false"/>
         <property key="enable-symbols" value="true"/>
@@ -388,6 +401,7 @@
         <property key="additional-options-use-response-files" value="false"/>
         <property key="additional-options-write-sla" value="false"/>
         <property key="allocate-dinit" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="code-dinit" value="false"/>
         <property key="ebase-addr" value=""/>
         <property key="enable-check-sections" value="false"/>
@@ -427,6 +441,7 @@
       <C32CPP>
         <property key="additional-warnings" value="false"/>
         <property key="addresss-attribute-use" value="false"/>
+        <property key="appendMe" value=""/>
         <property key="check-new" value="false"/>
         <property key="eh-specs" value="true"/>
         <property key="enable-app-io" value="false"/>

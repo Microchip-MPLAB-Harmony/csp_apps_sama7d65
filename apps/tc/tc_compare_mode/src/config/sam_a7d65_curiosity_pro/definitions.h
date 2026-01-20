@@ -97,7 +97,7 @@ extern "C" {
   Parameters:
     data            - Pointer to the data structure containing any data
                       necessary to initialize the module. This pointer may
-                      be null if no data is required and sam_a7d65_curiosity_pro initialization
+                      be null if no data is required and default initialization
                       is to be used.
 
   Returns:

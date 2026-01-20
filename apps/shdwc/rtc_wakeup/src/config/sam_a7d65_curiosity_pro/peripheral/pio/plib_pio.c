@@ -347,7 +347,7 @@ bool PIO_PinInterruptCallbackRegister(
 
   Description:
     This function defines the Interrupt service routine for PORTC.
-    This is the function which by sam_a7d65_curiosity_pro gets into Interrupt Vector Table.
+    This is the function which by default gets into Interrupt Vector Table.
 
   Remarks:
     User should not call this function.

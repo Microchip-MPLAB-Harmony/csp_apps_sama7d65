@@ -219,15 +219,11 @@
                      projectFiles="true">
         <logicalFolder name="components" displayName="components" projectFiles="true">
           <itemPath>acc_interrupt_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/dfp.yml</itemPath>
-          <itemPath>acc_interrupt_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/core.yml</itemPath>
           <itemPath>acc_interrupt_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/cmsis.yml</itemPath>
+          <itemPath>acc_interrupt_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/core.yml</itemPath>
+          <itemPath>acc_interrupt_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/acc.yml</itemPath>
         </logicalFolder>
         <itemPath>acc_interrupt_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/mcc-config.mc4</itemPath>
-      </logicalFolder>
-      <logicalFolder name="sam_a7d65_curiosity_pro"
-                     displayName="sam_a7d65_curiosity_pro"
-                     projectFiles="true">
-        <itemPath>sam_a7d65_curiosity_pro/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
     </logicalFolder>

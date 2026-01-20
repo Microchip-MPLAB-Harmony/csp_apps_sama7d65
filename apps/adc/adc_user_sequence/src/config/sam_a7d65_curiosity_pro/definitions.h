@@ -55,8 +55,8 @@
 #include "peripheral/gic/plib_gic.h"
 #include "peripheral/pio/plib_pio.h"
 #include "peripheral/adc/plib_adc.h"
-#include "peripheral/flexcom/usart/plib_flexcom6_usart.h"
 #include "peripheral/tc/plib_tc0.h"
+#include "peripheral/flexcom/usart/plib_flexcom6_usart.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -100,7 +100,7 @@ extern "C" {
   Parameters:
     data            - Pointer to the data structure containing any data
                       necessary to initialize the module. This pointer may
-                      be null if no data is required and sam_a7d65_curiosity_pro initialization
+                      be null if no data is required and default initialization
                       is to be used.
 
   Returns:

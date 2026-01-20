@@ -175,7 +175,7 @@ static bool qspi0_setup_transfer( qspi_memory_xfer_t *qspi_memory_xfer, QSPI_TRA
         case QSPI_MEM_WRITE:
             mask |= QSPI_IFR_TFRTYP(QSPI_IFR_TFRTYP_TRSFR_MEMORY_Val);
             break;
-        default:
+        default :
                  /* Do Nothing */
             break;
     };
