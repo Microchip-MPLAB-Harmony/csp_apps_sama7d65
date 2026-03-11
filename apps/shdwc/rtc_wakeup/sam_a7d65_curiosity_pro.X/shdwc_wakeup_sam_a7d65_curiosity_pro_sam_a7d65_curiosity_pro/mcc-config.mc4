@@ -1,5 +1,5 @@
 configVersion: 1.0.0
-coreVersion: 5.8.3
+coreVersion: 5.8.4
 spaHostVersion: 1.2.0
 device: SAMA7D65
 deviceLibrary:
@@ -19,13 +19,13 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\sam_a7d65_curiosity_pro\definitions.h
   hash: 64d01aaca5dbfee13a2b7658ae5f85964b34dd8732291408f213b39230e4db1c
 - file: ..\src\config\sam_a7d65_curiosity_pro\device.h
-  hash: 44f59b10d8978003d7779664b040a9f5523f441f0c98c4b365b60d122fd9f9e3
+  hash: 3cf585ea5382f313611833378511af83d16bda35f00a1500229496c745c51767
 - file: ..\src\config\sam_a7d65_curiosity_pro\device_cache.h
   hash: ce94cf269fc251c24bb9e5a10bef856736681af405f0ac733e14610f9349cbfe
 - file: ..\src\config\sam_a7d65_curiosity_pro\fault_handlers.c
   hash: 931e951cf7431d3d70d6ab81bcd265ff0ac8b3f473b73cd7a541f59d49786b7c
 - file: ..\src\config\sam_a7d65_curiosity_pro\initialization.c
-  hash: a2d86c021db5781432d4951a8194a28a3b36b0ab2acb093d50984d5cd520ea1d
+  hash: 2d1ce494950240bd6efd0b47c9f61c505bd26089105d7d945663b334a1f94b1d
 - file: ..\src\config\sam_a7d65_curiosity_pro\interrupts.c
   hash: feae596dfbade642a5c7cd74a47d77f1d82c9536f9422f7ba36e2fb8e5bfdd90
 - file: ..\src\config\sam_a7d65_curiosity_pro\interrupts.h
@@ -57,9 +57,9 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\sam_a7d65_curiosity_pro\peripheral\rtc\plib_rtc.c
   hash: a96eb4ae7fbe704cdd2242aa5be828a97a932a8833695c5f393cafec370a1dd6
 - file: ..\src\config\sam_a7d65_curiosity_pro\peripheral\rtc\plib_rtc.h
-  hash: 2864005eae67b8e25a6fe3f353d67527fada152b1fd5f79e3894c41db48aa310
+  hash: c4e4fc1d83d6b7c81c1b6db4b9cc21d0544aa4ff9ad006d2278b5c39f04e7a3c
 - file: ..\src\config\sam_a7d65_curiosity_pro\peripheral\rtc\plib_rtc_common.h
-  hash: 8243f42e5c86d79aace66db441d7d3e5003c42ce15d3c91b8029bbce3a50c080
+  hash: 4f61f10ae3f65617093fb501bc051ddf7a53e145a5e487eda69862eb85dbc739
 - file: ..\src\config\sam_a7d65_curiosity_pro\peripheral\shdwc\plib_shdwc.c
   hash: 5ea8117d7173e58dfc07e891e569f3cca3cf639a3b702a3079d4a7375df7d03b
 - file: ..\src\config\sam_a7d65_curiosity_pro\peripheral\shdwc\plib_shdwc.h
