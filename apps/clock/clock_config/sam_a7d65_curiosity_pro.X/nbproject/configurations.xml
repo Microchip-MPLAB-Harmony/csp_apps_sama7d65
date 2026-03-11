@@ -1,13 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <configurationDescriptor version="65">
   <logicalFolder name="root" displayName="root" projectFiles="true">
-    <logicalFolder name="HeaderFiles"
-                   displayName="Header Files"
-                   projectFiles="true">
+    <logicalFolder name="HeaderFiles" displayName="Header Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="sam_a7d65_curiosity_pro"
-                       displayName="sam_a7d65_curiosity_pro"
-                       projectFiles="true">
+        <logicalFolder name="sam_a7d65_curiosity_pro" displayName="sam_a7d65_curiosity_pro" projectFiles="true">
           <logicalFolder name="peripheral" displayName="peripheral" projectFiles="true">
             <logicalFolder name="clk" displayName="clk" projectFiles="true">
               <itemPath>../src/config/sam_a7d65_curiosity_pro/peripheral/clk/plib_clk.h</itemPath>
@@ -49,9 +45,7 @@
             </logicalFolder>
           </logicalFolder>
         </logicalFolder>
-        <logicalFolder name="SAMA7D65_DFP"
-                       displayName="SAMA7D65_DFP"
-                       projectFiles="true">
+        <logicalFolder name="SAMA7D65_DFP" displayName="SAMA7D65_DFP" projectFiles="true">
           <logicalFolder name="component" displayName="component" projectFiles="true">
             <itemPath>../src/packs/SAMA7D65_DFP/component/pit64b.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/component/rtt.h</itemPath>
@@ -219,44 +213,30 @@
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="true">
-      <logicalFolder name="clock_configuration_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro"
-                     displayName="clock_configuration_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro"
-                     projectFiles="true">
+    <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
+      <logicalFolder name="clock_configuration_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro" displayName="clock_configuration_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro" projectFiles="true">
+        <itemPath>clock_configuration_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/mcc-config.mc4</itemPath>
         <logicalFolder name="components" displayName="components" projectFiles="true">
-          <itemPath>clock_configuration_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/pit64b0.yml</itemPath>
-          <itemPath>clock_configuration_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/dfp.yml</itemPath>
           <itemPath>clock_configuration_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/cmsis.yml</itemPath>
           <itemPath>clock_configuration_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/core.yml</itemPath>
+          <itemPath>clock_configuration_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/dfp.yml</itemPath>
+          <itemPath>clock_configuration_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/pit64b0.yml</itemPath>
         </logicalFolder>
-        <itemPath>clock_configuration_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/mcc-config.mc4</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
     </logicalFolder>
-    <logicalFolder name="LibraryFiles"
-                   displayName="LibraryFiles"
-                   projectFiles="true">
+    <logicalFolder name="LibraryFiles" displayName="LibraryFiles" projectFiles="true">
     </logicalFolder>
-    <logicalFolder name="LinkerScript"
-                   displayName="Linker Files"
-                   projectFiles="true">
+    <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="sam_a7d65_curiosity_pro"
-                       displayName="sam_a7d65_curiosity_pro"
-                       projectFiles="true">
+        <logicalFolder name="sam_a7d65_curiosity_pro" displayName="sam_a7d65_curiosity_pro" projectFiles="true">
           <itemPath>../src/config/sam_a7d65_curiosity_pro/ddr.ld</itemPath>
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
-    <logicalFolder name="SourceFiles"
-                   displayName="Source Files"
-                   projectFiles="true">
+    <logicalFolder name="SourceFiles" displayName="Source Files" projectFiles="true">
       <logicalFolder name="config" displayName="config" projectFiles="true">
-        <logicalFolder name="sam_a7d65_curiosity_pro"
-                       displayName="sam_a7d65_curiosity_pro"
-                       projectFiles="true">
+        <logicalFolder name="sam_a7d65_curiosity_pro" displayName="sam_a7d65_curiosity_pro" projectFiles="true">
           <logicalFolder name="peripheral" displayName="peripheral" projectFiles="true">
             <logicalFolder name="clk" displayName="clk" projectFiles="true">
               <itemPath>../src/config/sam_a7d65_curiosity_pro/peripheral/clk/plib_clk.c</itemPath>
@@ -296,11 +276,11 @@
       <toolsSet>
         <developmentServer>localhost</developmentServer>
         <targetDevice>SAMA7D65</targetDevice>
-        <targetHeader></targetHeader>
-        <targetPluginBoard></targetPluginBoard>
+        <targetHeader/>
+        <targetPluginBoard/>
         <platformTool>PK5Tool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.60</languageToolchainVersion>
+        <languageToolchainVersion>5.00</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -310,8 +290,7 @@
         <ScriptingSetting key="boot.load_adr" value=""/>
         <ScriptingSetting key="boot.use" value="true"/>
         <ScriptingSetting key="boot.entry_adr" value=""/>
-        <ScriptingSetting key="boot.path"
-                          value="${ProjectDir}\..\..\..\..\deps\at91bootstrap_binaries\at91bootstrap.elf"/>
+        <ScriptingSetting key="boot.path" value="${ProjectDir}\..\..\..\..\deps\at91bootstrap_binaries\at91bootstrap.elf"/>
         <ScriptingSetting key="boot.prj" value=""/>
       </ScriptingSettings>
       <compileType>
@@ -324,7 +303,7 @@
         <loading>
           <useAlternateLoadableFile>false</useAlternateLoadableFile>
           <parseOnProdLoad>false</parseOnProdLoad>
-          <alternateLoadableFile></alternateLoadableFile>
+          <alternateLoadableFile/>
         </loading>
         <subordinates>
         </subordinates>
@@ -332,9 +311,9 @@
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
         <makeUseCleanTarget>false</makeUseCleanTarget>
-        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPreStep/>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
-        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPostStep/>
         <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
@@ -348,8 +327,7 @@
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories"
-                  value="../src;../src/config/sam_a7d65_curiosity_pro;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core_A/Include;../src/packs/SAMA7D65_DFP"/>
+        <property key="extra-include-directories" value="../src;../src/config/sam_a7d65_curiosity_pro;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core_A/Include;../src/packs/SAMA7D65_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -449,8 +427,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories"
-                  value="../src;../src/config/sam_a7d65_curiosity_pro;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core_A/Include;../src/packs/SAMA7D65_DFP"/>
+        <property key="extra-include-directories" value="../src;../src/config/sam_a7d65_curiosity_pro;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core_A/Include;../src/packs/SAMA7D65_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -484,12 +461,9 @@
       <ICD4Tool>
         <property key="AutoSelectMemRanges" value="auto"/>
         <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
-        <property key="ToolFirmwareFilePath"
-                  value="Press to browse for a specific firmware version"/>
-        <property key="ToolFirmwareOption.UpdateOptions"
-                  value="ToolFirmwareOption.UseLatest"/>
-        <property key="ToolFirmwareToolPack"
-                  value="Press to select which tool pack to use"/>
+        <property key="ToolFirmwareFilePath" value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UpdateOptions" value="ToolFirmwareOption.UseLatest"/>
+        <property key="ToolFirmwareToolPack" value="Press to select which tool pack to use"/>
         <property key="communication.activationmode" value="nohv"/>
         <property key="communication.interface" value="swd"/>
         <property key="communication.interface.jtag" value="2wire"/>
@@ -512,8 +486,7 @@
         <property key="memories.exclude.configurationmemory" value="true"/>
         <property key="memories.flashdata" value="true"/>
         <property key="memories.id" value="true"/>
-        <property key="memories.instruction.ram.ranges"
-                  value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.instruction.ram.ranges" value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="51000-e9000fff"/>
         <property key="poweroptions.powerenable" value="false"/>
@@ -527,8 +500,7 @@
         <property key="programoptions.pgmentry.voltage" value="low"/>
         <property key="programoptions.pgmspeed" value="Med"/>
         <property key="programoptions.preservedataflash" value="false"/>
-        <property key="programoptions.preservedataflash.ranges"
-                  value="${memories.dataflash.sam_a7d65_curiosity_pro}"/>
+        <property key="programoptions.preservedataflash.ranges" value="${memories.dataflash.sam_a7d65_curiosity_pro}"/>
         <property key="programoptions.preserveeeprom" value="false"/>
         <property key="programoptions.preserveeeprom.ranges" value=""/>
         <property key="programoptions.preserveprogram.ranges" value=""/>
@@ -543,26 +515,20 @@
         <property key="script.log_level" value="1"/>
         <property key="script.reset_delay" value="0"/>
         <property key="script.show_output" value="false"/>
-        <property key="toolpack.updateoptions"
-                  value="toolpack.updateoptions.uselatestoolpack"/>
-        <property key="toolpack.updateoptions.packversion"
-                  value="Press to select which tool pack to use"/>
+        <property key="toolpack.updateoptions" value="toolpack.updateoptions.uselatestoolpack"/>
+        <property key="toolpack.updateoptions.packversion" value="Press to select which tool pack to use"/>
         <property key="voltagevalue" value="3.25"/>
       </ICD4Tool>
       <PK5Tool>
         <property key="memories.programmemory.ranges" value="51000-e9000fff"/>
-        <property key="programmerToGoFilePath"
-                  value="C:/Users/I76597/h3/csp_apps/csp_apps_sama7d65/apps/clock/clock_config/sam_a7d65_curiosity_pro.X/debug/sam_a7d65_curiosity_pro/sam_a7d65_curiosity_pro_ptg"/>
+        <property key="programmerToGoFilePath" value="C:/Users/I76597/h3/csp_apps/csp_apps_sama7d65/apps/clock/clock_config/sam_a7d65_curiosity_pro.X/debug/sam_a7d65_curiosity_pro/sam_a7d65_curiosity_pro_ptg"/>
       </PK5Tool>
       <Tool>
         <property key="AutoSelectMemRanges" value="auto"/>
         <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
-        <property key="ToolFirmwareFilePath"
-                  value="Press to browse for a specific firmware version"/>
-        <property key="ToolFirmwareOption.UpdateOptions"
-                  value="ToolFirmwareOption.UseLatest"/>
-        <property key="ToolFirmwareToolPack"
-                  value="Press to select which tool pack to use"/>
+        <property key="ToolFirmwareFilePath" value="Press to browse for a specific firmware version"/>
+        <property key="ToolFirmwareOption.UpdateOptions" value="ToolFirmwareOption.UseLatest"/>
+        <property key="ToolFirmwareToolPack" value="Press to select which tool pack to use"/>
         <property key="communication.activationmode" value="nohv"/>
         <property key="communication.interface" value="swd"/>
         <property key="communication.interface.jtag" value="2wire"/>
@@ -585,8 +551,7 @@
         <property key="memories.exclude.configurationmemory" value="true"/>
         <property key="memories.flashdata" value="true"/>
         <property key="memories.id" value="true"/>
-        <property key="memories.instruction.ram.ranges"
-                  value="${memories.instruction.ram.ranges}"/>
+        <property key="memories.instruction.ram.ranges" value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="51000-e9000fff"/>
         <property key="poweroptions.powerenable" value="false"/>
@@ -600,8 +565,7 @@
         <property key="programoptions.pgmentry.voltage" value="low"/>
         <property key="programoptions.pgmspeed" value="Med"/>
         <property key="programoptions.preservedataflash" value="false"/>
-        <property key="programoptions.preservedataflash.ranges"
-                  value="${memories.dataflash.sam_a7d65_curiosity_pro}"/>
+        <property key="programoptions.preservedataflash.ranges" value="${memories.dataflash.sam_a7d65_curiosity_pro}"/>
         <property key="programoptions.preserveeeprom" value="false"/>
         <property key="programoptions.preserveeeprom.ranges" value=""/>
         <property key="programoptions.preserveprogram.ranges" value=""/>
@@ -616,10 +580,8 @@
         <property key="script.log_level" value="1"/>
         <property key="script.reset_delay" value="0"/>
         <property key="script.show_output" value="false"/>
-        <property key="toolpack.updateoptions"
-                  value="toolpack.updateoptions.uselatestoolpack"/>
-        <property key="toolpack.updateoptions.packversion"
-                  value="Press to select which tool pack to use"/>
+        <property key="toolpack.updateoptions" value="toolpack.updateoptions.uselatestoolpack"/>
+        <property key="toolpack.updateoptions.packversion" value="Press to select which tool pack to use"/>
         <property key="voltagevalue" value="3.25"/>
       </Tool>
     </conf>
