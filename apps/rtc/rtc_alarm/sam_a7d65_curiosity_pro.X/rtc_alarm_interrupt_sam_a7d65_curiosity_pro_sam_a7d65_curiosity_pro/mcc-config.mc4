@@ -1,5 +1,5 @@
 configVersion: 1.0.0
-coreVersion: 5.8.3
+coreVersion: 5.8.4
 spaHostVersion: 1.2.0
 device: SAMA7D65
 deviceLibrary:
@@ -20,13 +20,13 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\sam_a7d65_curiosity_pro\definitions.h
   hash: 6758219d7fd83c9a03acf3a11c0f6a7cbd5807d10520615eca8435d169e05e4e
 - file: ..\src\config\sam_a7d65_curiosity_pro\device.h
-  hash: 44f59b10d8978003d7779664b040a9f5523f441f0c98c4b365b60d122fd9f9e3
+  hash: 3cf585ea5382f313611833378511af83d16bda35f00a1500229496c745c51767
 - file: ..\src\config\sam_a7d65_curiosity_pro\device_cache.h
   hash: ce94cf269fc251c24bb9e5a10bef856736681af405f0ac733e14610f9349cbfe
 - file: ..\src\config\sam_a7d65_curiosity_pro\fault_handlers.c
   hash: 931e951cf7431d3d70d6ab81bcd265ff0ac8b3f473b73cd7a541f59d49786b7c
 - file: ..\src\config\sam_a7d65_curiosity_pro\initialization.c
-  hash: c667ea9690ec5225f971e04e58f346abe00f8b774ba47ddce8a5e2323c967dd6
+  hash: 1d7f9e7d7859383b75af0b40f436eddccfec5212ef702212de8e1480aba9b579
 - file: ..\src\config\sam_a7d65_curiosity_pro\interrupts.c
   hash: feae596dfbade642a5c7cd74a47d77f1d82c9536f9422f7ba36e2fb8e5bfdd90
 - file: ..\src\config\sam_a7d65_curiosity_pro\interrupts.h
@@ -60,9 +60,9 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\sam_a7d65_curiosity_pro\peripheral\rtc\plib_rtc.c
   hash: a96eb4ae7fbe704cdd2242aa5be828a97a932a8833695c5f393cafec370a1dd6
 - file: ..\src\config\sam_a7d65_curiosity_pro\peripheral\rtc\plib_rtc.h
-  hash: 2864005eae67b8e25a6fe3f353d67527fada152b1fd5f79e3894c41db48aa310
+  hash: c4e4fc1d83d6b7c81c1b6db4b9cc21d0544aa4ff9ad006d2278b5c39f04e7a3c
 - file: ..\src\config\sam_a7d65_curiosity_pro\peripheral\rtc\plib_rtc_common.h
-  hash: 8243f42e5c86d79aace66db441d7d3e5003c42ce15d3c91b8029bbce3a50c080
+  hash: 4f61f10ae3f65617093fb501bc051ddf7a53e145a5e487eda69862eb85dbc739
 - file: ..\src\config\sam_a7d65_curiosity_pro\pin_configurations.csv
   hash: 9ea62f28aec071d18ee4ee917fe520efe4e5738d54833fdcaf737f6a1eb1c9c5
 - file: ..\src\config\sam_a7d65_curiosity_pro\stdio\xc32_monitor.c
