@@ -55,8 +55,8 @@
 #include "peripheral/gic/plib_gic.h"
 #include "peripheral/pio/plib_pio.h"
 #include "peripheral/adc/plib_adc.h"
-#include "peripheral/tc/plib_tc0.h"
 #include "peripheral/flexcom/usart/plib_flexcom6_usart.h"
+#include "peripheral/tc/plib_tc0.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
