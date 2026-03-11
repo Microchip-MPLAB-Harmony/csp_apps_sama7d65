@@ -1,5 +1,5 @@
 configVersion: 1.0.0
-coreVersion: 5.8.3
+coreVersion: 5.8.4
 spaHostVersion: 1.2.0
 device: SAMA7D65
 deviceLibrary:
@@ -19,13 +19,13 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\sam_a7d65_curiosity_pro\definitions.h
   hash: 45fb208d61d29453cedf852f032365b9912860bc1b7f79bfbac9ba82cd8a629b
 - file: ..\src\config\sam_a7d65_curiosity_pro\device.h
-  hash: 44f59b10d8978003d7779664b040a9f5523f441f0c98c4b365b60d122fd9f9e3
+  hash: 3cf585ea5382f313611833378511af83d16bda35f00a1500229496c745c51767
 - file: ..\src\config\sam_a7d65_curiosity_pro\device_cache.h
   hash: ce94cf269fc251c24bb9e5a10bef856736681af405f0ac733e14610f9349cbfe
 - file: ..\src\config\sam_a7d65_curiosity_pro\fault_handlers.c
   hash: 931e951cf7431d3d70d6ab81bcd265ff0ac8b3f473b73cd7a541f59d49786b7c
 - file: ..\src\config\sam_a7d65_curiosity_pro\initialization.c
-  hash: a488f3b151649deb9491b80f00040013dabc8dd7f7ffbbb5500b726e568f3f5f
+  hash: aa2f153ea2a807f987967f203f4c04e2655977596ae4946033343ee985bc21d6
 - file: ..\src\config\sam_a7d65_curiosity_pro\interrupts.c
   hash: feae596dfbade642a5c7cd74a47d77f1d82c9536f9422f7ba36e2fb8e5bfdd90
 - file: ..\src\config\sam_a7d65_curiosity_pro\interrupts.h
