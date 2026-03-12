@@ -211,6 +211,14 @@
             <itemPath>../src/packs/SAMA7D65_DFP/instance/pit64b0.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/bsc.h</itemPath>
             <itemPath>../src/packs/SAMA7D65_DFP/instance/uhpfs.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/pioa.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/piob.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/pioc.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/piod.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/pioe.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/securam.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/tzaesb.h</itemPath>
+            <itemPath>../src/packs/SAMA7D65_DFP/instance/uhphs.h</itemPath>
           </logicalFolder>
           <logicalFolder name="pio" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/SAMA7D65_DFP/pio/sama7d65.h</itemPath>
@@ -226,9 +234,13 @@
                      displayName="tc_capture_mode_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro"
                      projectFiles="true">
         <logicalFolder name="components" displayName="components" projectFiles="true">
-          <itemPath>tc_capture_mode_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/cmsis.yml</itemPath>
+          <itemPath>tc_capture_mode_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/tc1.yml</itemPath>
           <itemPath>tc_capture_mode_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/core.yml</itemPath>
+          <itemPath>tc_capture_mode_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/stdio.yml</itemPath>
+          <itemPath>tc_capture_mode_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/cmsis.yml</itemPath>
+          <itemPath>tc_capture_mode_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/tc0.yml</itemPath>
           <itemPath>tc_capture_mode_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/dfp.yml</itemPath>
+          <itemPath>tc_capture_mode_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components/flexcom6.yml</itemPath>
         </logicalFolder>
         <itemPath>tc_capture_mode_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/mcc-config.mc4</itemPath>
       </logicalFolder>
@@ -295,6 +307,9 @@
       <itemPath>../src/main.c</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>tc_capture_mode_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro/components</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="sam_a7d65_curiosity_pro" type="2">
@@ -303,7 +318,7 @@
         <targetDevice>SAMA7D65</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>ICD4Tool</platformTool>
+        <platformTool>PK5Tool</platformTool>
         <languageToolchain>XC32</languageToolchain>
         <languageToolchainVersion>4.60</languageToolchainVersion>
         <platform>3</platform>
@@ -422,7 +437,7 @@
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-cross-reference-file" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
-        <property key="heap-size" value="0"/>
+        <property key="heap-size" value="512"/>
         <property key="input-libraries" value=""/>
         <property key="kseg-length" value=""/>
         <property key="kseg-origin" value=""/>

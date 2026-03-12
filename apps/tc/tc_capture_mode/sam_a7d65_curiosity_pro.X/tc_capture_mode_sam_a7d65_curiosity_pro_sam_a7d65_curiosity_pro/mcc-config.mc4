@@ -1,5 +1,6 @@
 configVersion: 1.0.0
-coreVersion: 5.8.2
+coreVersion: 5.8.4
+spaHostVersion: 1.2.1
 device: SAMA7D65
 deviceLibrary:
   className: com.microchip.mcc.harmony.Harmony3Library
@@ -18,15 +19,15 @@ generatedFileHashHistoryMap:
 - file: ..\src\config\sam_a7d65_curiosity_pro\ddr.ld
   hash: c6454caab96febd03c6d9b487b502898fc4b492529c39a8441137c7b5feb4118
 - file: ..\src\config\sam_a7d65_curiosity_pro\definitions.h
-  hash: 56c49a089b1da70ef338fd0248fdb37af8f53635be1bb9bf507602ad89d8f57a
+  hash: 1a126b756cc73f385bf0fb74fbf627dcf8ad47bf5bd668c7be276b2a8ad750b4
 - file: ..\src\config\sam_a7d65_curiosity_pro\device.h
-  hash: 44f59b10d8978003d7779664b040a9f5523f441f0c98c4b365b60d122fd9f9e3
+  hash: 3cf585ea5382f313611833378511af83d16bda35f00a1500229496c745c51767
 - file: ..\src\config\sam_a7d65_curiosity_pro\device_cache.h
   hash: ce94cf269fc251c24bb9e5a10bef856736681af405f0ac733e14610f9349cbfe
 - file: ..\src\config\sam_a7d65_curiosity_pro\fault_handlers.c
   hash: 931e951cf7431d3d70d6ab81bcd265ff0ac8b3f473b73cd7a541f59d49786b7c
 - file: ..\src\config\sam_a7d65_curiosity_pro\initialization.c
-  hash: 5e87e2511bf5a80318d3a703b7e1fde9aaaabd22a26d0c04c82182093534002d
+  hash: e5202e07527f3fa91adbb9f1a556f0854a349b49754af9a2e16977680a73b8ff
 - file: ..\src\config\sam_a7d65_curiosity_pro\interrupts.c
   hash: feae596dfbade642a5c7cd74a47d77f1d82c9536f9422f7ba36e2fb8e5bfdd90
 - file: ..\src\config\sam_a7d65_curiosity_pro\interrupts.h
@@ -158,7 +159,7 @@ generatedFileHashHistoryMap:
 - file: ..\src\packs\SAMA7D65_DFP\component\sdmmc.h
   hash: 8c4fce6c80a6361a134fc045e4694072bb2dfc9814adce6fe70ccff64a397b50
 - file: ..\src\packs\SAMA7D65_DFP\component\secumod.h
-  hash: f4fe29c4f495f117d010386ddcd56723425a20dc475ec11851040f0d90a40adf
+  hash: 99f1e45dc1b8fddf353aea48a4297235279528d961740ad766d1169dfb77cba3
 - file: ..\src\packs\SAMA7D65_DFP\component\sfr.h
   hash: bb5d7369824df607e15bdd30c6d1649fed2ac02d05049877f5986b1755790de0
 - file: ..\src\packs\SAMA7D65_DFP\component\sfrbu.h
