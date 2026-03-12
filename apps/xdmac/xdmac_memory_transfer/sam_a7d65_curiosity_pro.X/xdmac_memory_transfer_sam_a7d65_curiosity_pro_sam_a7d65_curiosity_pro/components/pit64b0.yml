@@ -1,6 +1,6 @@
 configVersion: 1.0.0
 componentName: pit64b0
-coreVersion: 5.8.2
+coreVersion: 5.8.4
 device: SAMA7D65
 library: []
 dependency:
@@ -9,13 +9,9 @@ dependency:
   type: module
   version: ''
 - dependencyPackage: ''
-  name: CMSIS_5
-  type: package
-  version: 5.9.0
-- dependencyPackage: ''
   name: csp
   type: package
-  version: v3.23.0
+  version: v3.25.1
 customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
 data:
   attachments: {}
@@ -81,7 +77,7 @@ data:
       - children:
         - attributes:
             id: pit64b0
-            value: 2.14748368E8
+            value: '2.14748368E8'
           type: Dynamic
         type: Values
       type: Float
