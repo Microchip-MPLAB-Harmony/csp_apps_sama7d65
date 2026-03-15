@@ -3,6 +3,31 @@
 
 # Microchip MPLAB® Harmony 3 Release Notes
 
+## Harmony 3 peripheral library application examples for SAMA7D65 family v3.4.0
+
+### Development kit and demo application support
+
+Following table provides number of peripheral library examples available for different development kits.
+
+| Development Kits  | MPLAB X applications |
+|:-----------------:|:-------------------:|
+| [SAMA7D65 Curiosity Pro Board] | 33 |
+
+### New Features
+
+- None
+
+### Known Issues
+
+- None
+
+### Development Tools
+
+- [MPLAB® X IDE 6.30](https://www.microchip.com/mplab/mplab-x-ide)
+- MPLAB® X IDE plug-ins:
+  - MPLAB® Code Configurator (MCC) 5.6.4
+- [MPLAB® XC32 C/C++ Compiler 5.00](https://www.microchip.com/mplab/compilers)
+
 ## Harmony 3 peripheral library application examples for SAMA7D65 family v3.3.0
 
 ### Development kit and demo application support
