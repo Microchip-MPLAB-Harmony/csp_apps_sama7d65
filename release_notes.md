@@ -11,7 +11,7 @@ Following table provides number of peripheral library examples available for dif
 
 | Development Kits  | MPLAB X applications |
 |:-----------------:|:-------------------:|
-| [SAMA7D65 Curiosity Pro Board] | 33 |
+| [SAMA7D65 Curiosity Pro Board]() | 33 |
 
 ### New Features
 
