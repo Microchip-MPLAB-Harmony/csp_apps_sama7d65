@@ -216,7 +216,6 @@
           <itemPath>../src/packs/SAMA7D65_DFP/sama7d65.h</itemPath>
         </logicalFolder>
       </logicalFolder>
-      <itemPath>../src/app.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
       <logicalFolder name="qspi_flash_read_write_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro" displayName="qspi_flash_read_write_sam_a7d65_curiosity_pro_sam_a7d65_curiosity_pro" projectFiles="true">
@@ -277,7 +276,6 @@
       </logicalFolder>
       <itemPath>../src/main.c</itemPath>
       <itemPath>../src/config/sam_a7d65_curiosity_pro/pin_configurations.csv</itemPath>
-      <itemPath>../src/app.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>

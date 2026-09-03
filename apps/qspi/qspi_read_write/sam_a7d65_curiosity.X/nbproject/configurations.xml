@@ -220,7 +220,6 @@
           <itemPath>../src/packs/SAMA7D65_DFP/sama7d65.h</itemPath>
         </logicalFolder>
       </logicalFolder>
-      <itemPath>../src/app.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -287,7 +286,6 @@
         </logicalFolder>
       </logicalFolder>
       <itemPath>../src/main.c</itemPath>
-      <itemPath>../src/app.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
